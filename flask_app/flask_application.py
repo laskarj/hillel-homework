@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 from flask import Flask, request, escape
 from datetime import datetime
 from random import randint
@@ -104,7 +101,7 @@ def whoami():
 
 @app.route('/source_code/')
 def source_code():
-    with open('./flask_application .py', "r") as file:
+    with open('./flask_application.py', "r") as file:
         open_file = file.readlines()
     text_file = escape(''.join(open_file))
     return f"""
@@ -243,4 +240,3 @@ def random():
 
 
 app.run(debug=True, host='0.0.0.0')
->>>>>>> d8fc1ac (<add dz 4 and 7>)
